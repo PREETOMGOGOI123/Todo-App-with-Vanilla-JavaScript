@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en" class="text-[62.5]">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./index.css" />
+      </head>
+      <body class="font-josefin-sans">
+        <div class="container w-[144rem] h-[30rem] m-auto shadow-lg relative">
+            <header class="h-[30rem] bg-background-light bg-cover flex flex-col items-center gap-[4rem]">
+                <div class="menu-bar w-[54rem] mt-[7rem] flex justify-between items-center">
+                    <h1 class="text-white text-[4rem] tracking-[1.5rem]">TODO</h1>
+                    <img
+                    src="./assets/images/universalImages/icon-moon.svg"
+                    alt="icon-moon"
+                    class="h-[2.6rem]"
+                    />
+                </div>
+                <form
+                class="search-bar w-[54rem] h-[6.4rem] text-1.8rem bg-white items-center relative rounded-lg"
+                >
+                <div
+                class="h-[2.4rem] w-[2.4rem] rounded-[50%] border border-solid border-gray-200 absolute left-[2.4rem] top-[2rem]"
+                ></div>
+                  <input
+                  type="text" 
+                  id="todo__user-input"
+                  class="w-[100%] bg-transparent h-[100%] pl-[7.2rem] focus:outline-none rounded-lg "
+                  placeholder="Create a new todo..."
+                  />
+              </form>
+            </header>
+            <div id="todo-section" class="w-[54rem] bg-white absolute left-[50%] translate-x-[-50%] top-[24.7rem] rounded-lg shadow-lg">
+              <ul id="render__todo-list" class="flex flex-col items-center">
+              </ul>
+            </div>
+        </div>
+        </div>
+        <script src="./main.js"></script>
+      </body>
+    </html>
