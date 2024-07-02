@@ -1,5 +1,5 @@
     <!DOCTYPE html>
-    <html lang="en" class="text-[62.5]">
+    <html lang="en" class="text-[62.5%]">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
       </head>
       <body class="font-josefin-sans">
         <div class="container w-[144rem] h-[30rem] m-auto shadow-lg relative">
-            <header class="h-[30rem] bg-background-light bg-cover flex flex-col items-center gap-[4rem]">
+            <header class="header h-[30rem] bg-background-light bg-cover flex flex-col items-center gap-[4rem]">
                 <div class="menu-bar w-[54rem] mt-[7rem] flex justify-between items-center">
                     <h1 class="text-white text-[4rem] tracking-[1.5rem]">TODO</h1>
                     <img
@@ -18,7 +18,7 @@
                     />
                 </div>
                 <form
-                class="search-bar w-[54rem] h-[6.4rem] text-[1.8rem] font-normal bg-white items-center relative rounded-lg"
+                class="todo-form w-[54rem] h-[6.4rem] text-[1.8rem] font-normal bg-white items-center relative rounded-lg"
                 >
                 <div
                 class="h-[2.4rem] w-[2.4rem] rounded-[50%] border border-solid border-gray-200 absolute left-[2.4rem] top-[2rem]"
@@ -31,12 +31,23 @@
                   />
               </form>
             </header>
-            <div id="todo-section" class="w-[54rem] bg-white absolute left-[50%] translate-x-[-50%] top-[24.7rem] rounded-lg shadow-lg">
-              <ul id="render__todo-list" class="h-auto flex flex-col items-center">
-              </ul>
-            </div>
+            <section id="body-container">
+              <div class="w-[54rem] bg-white absolute left-[50%] translate-x-[-50%] top-[24.7rem] rounded-lg shadow-lg"> 
+                <ul id="todo-container">
+                </ul>
+                <div id="bottom-menu" class="flex justify-around h-[5rem] items-center text-[1.4rem]">
+                    <button id="button_count-todos-left"><span class="text__count-todos-left">5</span> items left</button>
+                  <div class="flex gap-5">
+                    <button id="button-all">All</button>
+                    <button id="button-active">Active</button>
+                    <button id="button-all">Completed</button>
+                  </div>
+                    <button id="button-all">Clear Completed</button>
+                </div>
+              </div>
+            </section>
         </div>
         </div>
-        <script type="module" src="./main.mjs "></script>
+        <script type="module" src="./main.mjs"></script>
       </body>
     </html>
