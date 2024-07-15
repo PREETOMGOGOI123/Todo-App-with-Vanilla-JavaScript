@@ -26,28 +26,28 @@
                   <input
                   type="text" 
                   id="todo__user-input"
-                  class="w-[100%] bg-transparent h-[100%] pl-[7.2rem] focus:outline-none rounded-lg "
+                  class="w-[100%] bg-transparent h-[100%] pl-[7.2rem] focus:outline-none rounded-lg"
                   placeholder="Create a new todo..."
                   />
               </form>
             </header>
             <section id="body-container">
-              <div class="w-[54rem] bg-white absolute left-[50%] translate-x-[-50%] top-[24.7rem] rounded-lg shadow-lg"> 
-                <ul id="todo-container">
+              <div class="w-[54rem] h-auto bg-white absolute left-[50%] translate-x-[-50%] top-[24.7rem] rounded-lg shadow-lg"> 
+                <ul id="todo-container" class=" w-[100%] flex flex-col-reverse rounded-lg">
                 </ul>
                 <div id="bottom-menu" class="flex justify-around h-[5rem] items-center text-[1.4rem]">
                     <button id="button_count-todos-left"><span class="text__count-todos-left">5</span> items left</button>
-                  <div class="flex gap-5">
-                    <button id="button-all">All</button>
-                    <button id="button-active">Active</button>
-                    <button id="button-all">Completed</button>
-                  </div>
+                    <div class="flex gap-5">
+                      <button id="button-all">All</button>
+                      <button id="button-active">Active</button>
+                      <button id="button-completed">Completed</button>
+                    </div>
                     <button id="button-all">Clear Completed</button>
                 </div>
               </div>
             </section>
         </div>
         </div>
-        <script type="module" src="./main.mjs"></script>
+        <script type="module" src="./index.js"></script>
       </body>
     </html>
