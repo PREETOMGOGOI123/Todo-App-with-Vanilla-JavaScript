@@ -2,17 +2,19 @@
 export default {
   content: [
     "./index.html",
-    "./main.js",
+    "./index.js",
     "./src/**/*.{js,html}",
   ],
   theme: {
     extend: {
       colors: {
         'custom-blue': ['#5596FF'],
-        'custom-violet': ['#AC2DEB']
+        'custom-violet': ['#AC2DEB'],
+        'custom-light-grey': ['#E3E4F1'],  
       },
       backgroundImage: {
         'background-light': "url('./assets/images/desktopViewImages/bg-desktop-light.jpg')",
+        'checked-mage': "url(./assets/images/universalImages/icon-check.svg)"
       },
       fontFamily:{
         'josefin-sans': ['Josefin Sans','sans-serif'],
